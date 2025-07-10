@@ -9,41 +9,41 @@
 </head>
 
 <body>
-    <!-- About Section -->
-    <section id="about">
-        <h1>I am a Developer and freelancing Graphic Designer based in India.</h1>
-        <div>
+    <nav class="navbar">
+        <a class="nav__link">Home</a>
+        <a class="nav__link">Blog</a>
+        <a class="nav__link">Contact</a>
+    </nav>
+    <div class="page">
 
-            <ul>
-                <li>Hello, welcome to my portfolio!</li>
+        <h3>Hello! नमस्ते</h3>
+        <h1>I'm Esha.</h1>
 
-                <li>I am Esha Baweja, a final-year B.Tech. Computer Science student at <a href="">Manipal University, Jaipur</a>. I
-                have a keen interest in creative design and exploring new technologies.</li>
+        <h1>Open Source</h1>
+        
+        <h1>Work</h1>
+        
+        <h1>Consulting</h1>
 
-                <li>Currently, I am interning at <a href="">BHEL Bhopal</a>, where I am gaining valuable experience in the
-                field.</li>
-
-                <li>In my role as a graphic designer at <a href="">Rezonance</a>, I strive to create visually appealing and
-                impactful designs, merging my passion for both design and technology.</li>
-
-                <li>I also run an <a href="">online t-shirt store</a> where I sell my designs.</li>
-
-                <li>Teaching and sharing knowledge is important to me, as it helps me solidify my understanding and
-                contribute to the community. Hence I was a core team member at <a href="">Randomize();</a>.</li>
-
-                <li>Apart from my work, I enjoy cooking, dining, and taking some moments of contemplation.</li>
-
-                <li>Feel free to reach out to me through the contact information below. I am always open to exciting
-                collaborations and opportunities!</li>
-
-            </ul>
-            <a target="_blank" href="https://drive.google.com/file/d/1TN76SqkYbiDfYTGtxvQtAceQAQXiSOJ9/view?usp=sharing"
-                target="_blank" rel="noopener noreferrer">
-                <button>Résumé 📥</button>
-            </a>
+        <h1>Let’s Connect</h1>
+        <p class="paragraph">Feel free to connect with me on any of these platforms!</p>
+        <div class="contact__buttons">
+            <a class="contact__button">LinkedIn @eshabaweja</a>
+            <a class="contact__button">Twitter @eshabaweja</a>
+            <a class="contact__button">GitHub @eshabaweja</a>
+            <a class="contact__button">LeetCode @eshabaweja</a>
         </div>
 
+    <!-- About Section -->
+    <section id="about">
+        <p class="paragraph">I want my portfolio to have a neon glass theme (https://dribbble.com/shots/24722909-Cryptolink-Website). I want my cursor to be followed. </p>
+            <a target="_blank" href="https://drive.google.com/file/d/1TN76SqkYbiDfYTGtxvQtAceQAQXiSOJ9/view?usp=sharing"
+                target="_blank" rel="noopener noreferrer">
+                <button class="button">Résumé 📥</button>
+            </a>
     </section>
+
+    <div class="card--glass">Here's a random blob of glass. Let's make it limited width.</div>
 
     <!-- Dev Section -->
     <section id="development">
@@ -52,36 +52,23 @@
             <li>GitHub: <a href="linkedin.com/in/eshabaweja">eshabaweja</a></li>
             <li>LeetCode: <a href="https://www.instagram.com/eshcapist/">eshabaweja</a></li>
         </ul>
-        </div>
 
-    </section>
-
-
-    <!-- Design Section -->
-    <section id="design">
-        <h3>graphic design</h3>
-        <!-- Design works -->
-
-        <ul>
-            <li>Behance: <a href="https://www.behance.net/eshcapist">eshcapist</a></li>
-            <!-- <li><a href="https://dribbble.com/eshcapist">Dribbble</a></li> -->
-            <li>Instagram: <a href="https://www.instagram.com/eshcapist/">eshcapist</a></li>
-        </ul>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h3>Network</h3>
+        <h3>network</h3>
         <div>
             <ul>
                 <li>LinkedIn: <a href="linkedin.com/in/eshabaweja">eshabaweja</a></li>
-                <li>Instagram: <a href="https://www.instagram.com/eshcapist/">eshcapist</a></li>
             </ul>
         </div>
     </section>
 
+</div>
+
     <!-- Footer -->
-    <footer rel="me noopener noreferrer">
+    <footer class="footer" rel="me noopener noreferrer">
         &copy; <span id="current-year"></span> Esha Baweja
     </footer>
 
@@ -94,7 +81,6 @@
         // Insert the current year into the HTML element
         document.getElementById("current-year").textContent = currentYear;
     </script>
-
 </body>
 
 </html>
