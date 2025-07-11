@@ -1,12 +1,14 @@
 :root {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: rgb(25, 25, 25);
-  background-color: rgb(246, 246, 246);
+  color: rgb(241, 241, 241);
   font-size:medium;
+  background: radial-gradient(#433a07,#042301,#31161d,#1849b3);
 }
 
-a{
+a, button{
   cursor: pointer;
+  text-decoration: none;
+  color:inherit;
 }
 
 h1,h2{
@@ -23,21 +25,26 @@ h3,h4,h5,h6{
 }
 
 .nav__link{
+  margin: 16px;
   font-variant-caps:all-small-caps;
-  margin-left: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav__link:hover{
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  padding: 8px;
+  border-top: 1px solid  rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid  rgba(255, 255, 255, 0.2);
 }
 
-.card--glass{
-  background: rgba(215, 223, 236, 0.2);
-  backdrop-filter: blur(20px);
+.glass{
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid #ddd;
-  border-radius: 8px;
+}
+
+.card{
+  border-radius: 16px;
   padding: 1em;
   width: 225px;
   height: 300px;
@@ -52,9 +59,13 @@ h3,h4,h5,h6{
 }
 
 .button {
-  padding: 1em;
-  border: 1px solid #112;
-  border-radius: 8px;
+  padding: 0.6rem;
+  margin: 1rem 1rem 0 0;
+  border-radius: 100px;
+  font-size: small;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #b400a2;
 }
 
 /* .button--primary {  }    
@@ -64,21 +75,32 @@ h3,h4,h5,h6{
 .button--disabled { }    */
 
 .button:hover{
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    background-color: #b400a2;
 }
 
-.contact__buttons{
-
+.contact_buttons__container{
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-wrap: wrap;  
 }
 
-.contact__button{
+.contact_button{
+  padding: 0.6rem;
+  margin: 1rem 1rem 0 0;
+  border-radius: 100px;
   font-size: small;
-  margin-right: 20px;
-  padding: 0.5em 0.5em;
-  border-radius: 20px;
-  border: 1px solid #112;
-  background-color: #eee;
-  box-shadow: 10px 10px;
-  backdrop-filter: blur(20px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact_button:hover{
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 .footer {
