@@ -128,9 +128,14 @@ h3,h4,h5,h6{
 }
 
 .contact_button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
   padding: 0.6rem;
   margin: 1rem 1rem 0 0;
   border-radius: 100px;
+  opacity: 80%;
   min-width: max-content;
   max-width: max-content;
   font-size: small;
@@ -140,7 +145,12 @@ h3,h4,h5,h6{
 
 .contact_button:hover{
     background: rgba(255, 255, 255, 0.2);
+    opacity: 100%;
     transform: translateY(-2px);
+}
+
+.contact_button__icon{
+  max-height: 24px;
 }
 
 .footer {
